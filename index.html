@@ -2,20 +2,21 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>「刀ステファンサイト」会員限定公演のお申し込み</title>
-    <style>
-        .hidden {
-            display: none;
-        }
-    </style>
+    <title>自動遷移中...</title>
 </head>
 <body>
-    <form id="autoSubmitForm" action="https://l-tike.com/st1/7pl7iwr1u6cxp5xta7c3" method="POST">
-        <input type="hidden" name="CERK" value="da2fd40a90fd1e7452d752a3933c1783">
-        <input type="submit" value="「刀ステファンサイト」会員限定公演のお申し込みはこちら" class="btn-100 hidden">
+    <p>自動で申し込みページへ移動しています。しばらくお待ちください。</p>
+
+    <form id="autoForm" action="https://l-tike.com/st1/nztapafoe1u961gexqnv" method="POST">
+        <input name="CERK" type="hidden" value="0196c9057050fda2ee2bdff58add2a0b">
+        <input type="submit" value="移動しない場合はこちらをクリックしてください">
     </form>
-    <script type="text/javascript">
-        document.getElementById('autoSubmitForm').submit();
+
+    <script>
+        // ページ読み込み完了時にフォームを自動送信
+        window.onload = function() {
+            document.getElementById('autoForm').submit();
+        };
     </script>
 </body>
 </html>
